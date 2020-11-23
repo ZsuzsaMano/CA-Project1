@@ -15,7 +15,7 @@ navbar {
     position: absolute;
     @include flex(space-around, center, row);
     list-style: none;
-    width: 17rem;
+    width: 22rem;
     left: 50%;
     transform: translateX(-50%);
 
