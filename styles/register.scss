@@ -3,4 +3,13 @@
 main{
   background-image: url("https://picsum.photos/id/1056/2000/1000");
 }
- 
+
+form{
+  width: 90%;
+  margin: auto;
+  @include flex(space-around, center, row);
+}
+
+input{
+  padding-left: 10rem;
+}
