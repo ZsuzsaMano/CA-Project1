@@ -1,24 +1,36 @@
 //main: index.scss
 
-navbar{
+navbar {
+  min-height: 4rem;
+  position: relative;
   @include flex(space-between, center, row);
-  ul{
-      @include flex(space-around, center, row);
-      list-style: none;
-      min-width: 70vw;
-      li:hover{
-        transition: 250ms linear;
-        color:white;
-        padding: 1rem;
-        background: grey;
-      }
-      .active{
-        color:white;
-        padding: 1rem;
-        background: black;
-        &:hover{
-          padding:0;
-        }
-      }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  ul {
+    position: absolute;
+    @include flex(space-around, center, row);
+    list-style: none;
+    width: 17rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+      color: $color1;
+      font-size: 1.125rem;
+    }
+
+    li:hover {
+      transition: 250ms linear;
+      color: black;
+    }
+
+    li.active {
+      color: black;
+    }
   }
 }
