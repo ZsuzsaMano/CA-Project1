@@ -1,6 +1,6 @@
 //main: index.scss
 
-navbar, footer{
+navbar, .footer__top{
   min-height: 4rem;
   position: relative;
   @include flex(space-between, center, row);
@@ -16,7 +16,7 @@ navbar, footer{
     position: absolute;
     @include flex(space-around, center, row);
     list-style: none;
-    width: 22rem;
+    width: 26rem;
     left: 50%;
     transform: translateX(-50%);
 
