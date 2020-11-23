@@ -16,6 +16,9 @@ navbar{
         color:white;
         padding: 1rem;
         background: black;
+        &:hover{
+          padding:0;
+        }
       }
   }
 }
