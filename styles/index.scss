@@ -1,3 +1,9 @@
+
+$color1: #707070;
+$color2: #F2F2F2;
+$color3:black;
+$color4:#fff;
+
 *{
   margin:0;
   padding:0;
@@ -10,14 +16,17 @@ a{
   color:black;
 }
 
-.hero__button{
+button{
   border: none;
+  margin-top: 2rem;
+  border-radius: 5px;
+  background: $color3;
+  color: $color4;
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 1em 2em;
 }
 
-$color1: #707070;
-$color2: #F2F2F2;
-$color3:black;
-$color4:#fff;
 
 
 @mixin flex($justify,$align, $direction){
