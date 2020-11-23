@@ -2,12 +2,16 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 a{
   text-decoration: none;
   color:black;
 }
+
+$color1: #F2F2F2;
+
 
 @mixin flex($justify,$align, $direction){
   display: flex;
