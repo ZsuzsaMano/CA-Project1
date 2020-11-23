@@ -1,12 +1,51 @@
 //main: index.scss
+main{
+  background-color: $color2;
+}
 
 .hero{
   text-align: center;
-  width: 440px;
   margin: 0 auto;
+  min-height: calc(100vh - 4rem);
   h1{
     font-size: 4rem;
     font-weight: 500;
     padding-top: 11.6rem;
+    padding-bottom: 4rem;
   }
+  p{
+    width: 440px;
+    margin: 0 auto;
+  }
+}
+
+.hero__button{
+  margin-top: 2rem;
+  border-radius: 5px;
+  background: $color3;
+  color: $color4;
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 1em 2em;
+}
+
+.ourContent{
+  text-align: center;
+  &__title{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+  &__text{
+    width:800px;
+    margin: 0 auto;
+  }
+  &__imgs{
+    @include flex(space-around, center, row);
+    padding: 88px;
+  }
+  &__img{
+    max-width: 300px;
+    text-align: left;
+  }
+
 }
