@@ -1,0 +1,21 @@
+//main: index.scss
+
+navbar{
+  @include flex(space-between, center, row);
+  ul{
+      @include flex(space-around, center, row);
+      list-style: none;
+      min-width: 70vw;
+      li:hover{
+        transition: 250ms linear;
+        color:white;
+        padding: 1rem;
+        background: grey;
+      }
+      .active{
+        color:white;
+        padding: 1rem;
+        background: black;
+      }
+  }
+}
