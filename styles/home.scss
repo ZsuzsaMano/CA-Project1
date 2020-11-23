@@ -7,6 +7,7 @@ main{
   text-align: center;
   margin: 0 auto;
   min-height: calc(100vh - 4rem);
+  background-image: url("https://picsum.photos/id/1045/2000/1000");
   h1{
     font-size: 4rem;
     font-weight: 500;
@@ -46,6 +47,17 @@ main{
   &__img{
     max-width: 300px;
     text-align: left;
+
+    p{
+    position: relative;
+    }
+    p::after{
+      content:'Learn More';
+      position: absolute;
+      top:3rem;
+      left:0;
+      font-size: 0.8rem;
+    }
   }
 
 }
