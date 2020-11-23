@@ -3,18 +3,22 @@ main{
   background-color: $color2;
 }
 
+h1{
+  font-size: 4rem;
+  font-weight: 500;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
 .hero{
   text-align: center;
   margin: 0 auto;
   min-height: calc(100vh - 4rem);
   background-image: url("https://picsum.photos/id/1045/2000/1000");
-
-  h1{
-    font-size: 4rem;
-    font-weight: 500;
+h1{
     padding-top: 11.6rem;
-    padding-bottom: 4rem;
-  }
+}
+
   p{
     width: 440px;
     margin: 0 auto;
