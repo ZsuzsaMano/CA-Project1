@@ -67,4 +67,22 @@ footer{
   opacity:0.3;
   ul a li{color:black;
 }
+.footer__end{
+  border-top: 1px solid black;
+  width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+.circle{
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 3.5rem 2rem;
+}
+p{
+  font-size: 0.8rem;
+  padding:2rem;
+}
 }
