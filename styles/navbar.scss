@@ -1,6 +1,6 @@
 //main: index.scss
 
-navbar {
+navbar, footer{
   min-height: 4rem;
   position: relative;
   @include flex(space-between, center, row);
@@ -9,6 +9,7 @@ navbar {
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
+    padding-left: 2.5rem;
   }
 
   ul {

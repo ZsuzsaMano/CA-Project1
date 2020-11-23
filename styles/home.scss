@@ -8,6 +8,7 @@ main{
   margin: 0 auto;
   min-height: calc(100vh - 4rem);
   background-image: url("https://picsum.photos/id/1045/2000/1000");
+
   h1{
     font-size: 4rem;
     font-weight: 500;
@@ -60,4 +61,10 @@ main{
     }
   }
 
+}
+
+footer{
+  opacity:0.3;
+  ul a li{color:black;
+}
 }
