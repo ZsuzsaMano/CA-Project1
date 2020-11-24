@@ -1,13 +1,19 @@
 //main: index.scss
 
-main{
-  background-image: url("https://picsum.photos/id/1056/2000/1000");
+main.register{
+  background-image: url("https://picsum.photos/id/1055/2000/1500");
 }
 
 form{
-  width: 90%;
+  width: 80%;
   margin: auto;
-  @include flex(space-around, center, row);
+  @include flex(space-around, center, column);
+  min-height: 150vh;
+}
+
+.form__line{
+    @include flex(space-between, center, row);
+    width:100%;
 }
 
 input{
