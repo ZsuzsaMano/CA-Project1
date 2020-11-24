@@ -1,6 +1,7 @@
 //main: index.scss
 
 .content{
+  background: $color4;
   text-align: center;
   h2{
   }
@@ -10,6 +11,7 @@
 }
 
 .proposition{
+  background: $color2;
 padding: 5rem;
 margin-bottom: 345px;
 &__cards{
@@ -29,4 +31,44 @@ margin-bottom: 345px;
   }
 
 }
+}
+
+.grid-container{
+  text-align: center;
+  grid-gap:30px;
+  grid-template-areas:
+   'grid1 grid2 grid3'
+   'grid1 grid2 grid4';
+
+  background: $color2;
+  display: grid;
+  padding: 80px 5rem;;
+  .grid1{
+    grid-area: grid1;
+    background:$color3;
+    color:$color4;
+    width: 340px;
+    height: 600px;
+    font-size: 3.5rem;
+  }
+  .grid2{
+    grid-area: grid2;
+    background: $color1;
+    color:$color4;
+    width: 340px;
+    height: 600px;
+    img{
+      border: 2px solid black;
+    }
+  }
+  .grid3, .grid4{
+    width:340px;
+    height:285px;
+    background: $color4;
+  }
+
+}
+
+.grid>*{
+  @include flex(center,center,row);
 }
