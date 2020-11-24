@@ -1,1 +1,32 @@
 //main: index.scss
+
+.content{
+  text-align: center;
+  h2{
+  }
+  blockquote{
+    padding: 1.5rem;
+  }
+}
+
+.proposition{
+padding: 5rem;
+margin-bottom: 345px;
+&__cards{
+  @include flex(space-around, center, row);
+}
+&__card p{
+  background:$color4;
+  padding: 1rem 1.5rem 3.5rem 1.5rem;
+  text-align: left;
+  position: relative;
+  &::after{
+    position:absolute;
+    top:4rem;
+    left:1.5rem;
+    content:'See More';
+    font-size:0.8rem;
+  }
+
+}
+}
