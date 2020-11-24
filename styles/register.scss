@@ -19,3 +19,19 @@ form{
 input{
   padding-left: 10rem;
 }
+
+.terms{
+  padding:1rem;
+  max-width: 630px;
+  background: rgba(250,250,250, 0.3);
+  .terms__titel{
+    text-align: center;
+  }
+  ul{
+    padding:0 1em;
+    list-style-position: inside;
+  }
+  .list__3rd{
+    list-style-type: lower-latin;
+  }
+}
