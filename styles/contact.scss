@@ -1,1 +1,12 @@
 //main: index.scss
+.contact{
+  width:90%;
+  margin:auto;
+  text-align: center;
+  padding: 1em;
+  ul{
+    list-style: none;
+    line-height: 2em;
+    padding-bottom: 3em;
+  }
+}
