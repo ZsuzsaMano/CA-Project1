@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,15 @@
   <link rel="stylesheet" href="./styles/index.min.css">
   <title>Register</title>
 </head>
+
 <body>
   <navbar>
     <h2>Logo</h2>
     <ul>
-  <a href="./index.html" >
+      <a href="./index.html">
         <li>Home</li>
       </a>
-          <a href="./register.html" >
+      <a href="./register.html">
         <li class="active">Register</li>
       </a>
       <a href="./content.html">
@@ -23,63 +25,90 @@
       </a>
       <a href="./contact.html">
         <li>Contact</li>
-      </a>    </ul>
+      </a> </ul>
   </navbar>
-  <main>
+  <main class="register">
     <h1>
       Register
     </h1>
-<form action="">
-  <label for="fname">First Name</label>
-  <input type="text" id="fname" name="fname" required>
-  <label for="lname">Last Name</label>
-  <input type="text"  id="lname" name="lname" required>
-  <label for="email">Email</label>
-  <input type="email"  id="email" name="email" required>
-  <label for="date">Birth Date</label>
-  <input type="date"  id="date" name="date" required>
-  <label for="">Select Package</label>
-  <select name="package" id="package" required>
-  <option value="1">10km 1 night</option>
-  <option value="2">20km 2 nights</option>
-  <option value="3">30km 3 nights</option>
-  <option value="4">40km 4 nights</option>
-  </select>
-  <label for="">Tell us more about yourself</label>
-  <textarea name="name" rows="8" cols="80">
-  </textarea>
-  <label for="promotion">Recive info on new exiting trips</label>
-    <label for="yes">Yes</label>
-  <input type="radio" name="promotion" id="yes">
-  <label for="no">No</label>
-  <input type="radio" name="promotion" id="no">
+    <form action="">
+      <div class="form__name form__line">
+      <div class="form__entity">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" required>
+      </div>
+      <div class="form__entity">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" required>
+      </div>
+    </div>
 
-<section class="terms">
-  <h2 class="terms__titel">Terms and Conditions</h2>
-  <ul>
-    <li>Level 1</li>
-    <ul>
-      <li>Level 2</li>
-      <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-           Similique officia temporibus labore fugiat quia cum quod et,
-            id numquam aperiam vitae necessitatibus porro quasi. !</li>
-        <li>Facilis,
-         optio maxime. Soluta aut, temporibus autem dicta animi tempore
-          alias eaque perferendis. Explicabo quam natus ab ipsa nisi
-           consequuntur quas saepe</li>
-      </ul>
-    </ul>
-    <li>Lorem ipsum dolor sit amet,</li>
-    <ul>
-      <li> consectetur adipisicing elit. Libero.</li>
-    </ul>
-  </ul>
-  <input type="checkbox" id="consent" required>
-  <label for="consent">I consent to ...</label>
-</section>
-<button>Register</button>
-</form>
+      <div class="form__mail-birth form__line">
+            <div class="form__entity">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form__entity">
+      <label for="date">Birth Date</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+
+      </div>
+      <div class="form__package">
+      <label for="">Select Package</label>
+      <select name="package" id="package" required>
+        <option value="1">10km 1 night</option>
+        <option value="2">20km 2 nights</option>
+        <option value="3">30km 3 nights</option>
+        <option value="4">40km 4 nights</option>
+      </select>
+      </div>
+      <div class="form__textarea form__line">
+        
+      <label for="">Tell us more about yourself</label>
+      <textarea name="name" rows="8" cols="80">
+  </textarea>
+    </div>
+
+  <div class="form__promotion form__line">
+
+
+      <label for="promotion">Recive info on new exiting trips</label>
+      <div class="form__entity">
+      <label for="yes">Yes</label>
+      <input type="radio" name="promotion" id="yes">
+        </div>
+      <div class="form__entity">
+      <label for="no">No</label>
+      <input type="radio" name="promotion" id="no">
+        </div>
+</div>
+      <section class="terms">
+        <h2 class="terms__titel">Terms and Conditions</h2>
+        <ul>
+          <li>Level 1</li>
+          <ul>
+            <li>Level 2</li>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Similique officia temporibus labore fugiat quia cum quod et,
+                id numquam aperiam vitae necessitatibus porro quasi. !</li>
+              <li>Facilis,
+                optio maxime. Soluta aut, temporibus autem dicta animi tempore
+                alias eaque perferendis. Explicabo quam natus ab ipsa nisi
+                consequuntur quas saepe</li>
+            </ul>
+          </ul>
+          <li>Lorem ipsum dolor sit amet,</li>
+          <ul>
+            <li> consectetur adipisicing elit. Libero.</li>
+          </ul>
+        </ul>
+        <input type="checkbox" id="consent" required>
+        <label for="consent">I consent to ...</label>
+      </section>
+      <button>Register</button>
+    </form>
   </main>
   <footer>
     <div class="footer__top">
@@ -93,15 +122,16 @@
         </a>
         <a href="./contact.html">
           <li>Contact</li>
-        </a>    </ul>
-        </div>
-        <div class="footer__end">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <p class="copyright">&copy 2010-2020 Privacy Terms</p>
-        </div>
+        </a> </ul>
+    </div>
+    <div class="footer__end">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <p class="copyright">&copy 2010-2020 Privacy Terms</p>
+    </div>
   </footer>
 
 </body>
+
 </html>
